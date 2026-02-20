@@ -1,0 +1,56 @@
+name: sample_social
+description: Trilog - A social media app (Flutter conversion)
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Firebase
+  firebase_core: ^2.24.2
+  firebase_auth: ^4.15.3
+  firebase_database: ^10.4.0
+  firebase_storage: ^11.5.6
+
+  # State Management
+  flutter_riverpod: ^2.4.9
+  riverpod_annotation: ^2.3.3
+
+  # Image handling
+  image_picker: ^1.0.7
+  cached_network_image: ^3.3.1
+
+  # UI
+  shimmer: ^3.0.0
+  story_view: ^0.14.0
+  timeago: ^3.6.0
+  cupertino_icons: ^1.0.2
+  google_fonts: ^6.1.0
+  fluttertoast: ^8.2.4
+
+  # Navigation
+  go_router: ^12.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  build_runner: ^2.4.7
+  riverpod_generator: ^2.3.9
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
